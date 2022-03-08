@@ -1,0 +1,61 @@
+.heading{
+    color: #15a841;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5em;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 2px 2px whitesmoke;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    animation: animate 1s ease-in-out infinite;
+    justify-content: center;
+    
+
+}
+
+.title{
+    width: 96%;
+    height: 150px;
+    border-radius: 12px;
+    background-color: hsla(60, 4%, 9%, 0.733);
+    box-shadow: 5px 10px 15px black;
+    color: orangered;
+    margin-left: 1.5em;
+    margin-top: 1rem;
+}
+.heading{
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: blinker 1s linear infinite;
+}
+@keyframes blinker{
+    50%{
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .heading{
+        font-size: 1.5em;
+    }
+    .title{
+        height: 130px;
+    }
+}
+@media only screen and (max-width: 985px){
+    .title{
+        height: 120px;
+        margin-left: 1em;
+    }
+    
+}
+@media screen and (max-width: 800px){
+    .heading{
+        font-size: 1em;
+    }
+    .title{
+        height: 110px;
+        margin-left: 1.5%;
+    }
+}
